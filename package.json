@@ -1,9 +1,11 @@
 {
 	"name": "pdf-mate",
 	"version": "0.0.1",
+	"main": "electron.js",
 	"description": "",
 	"scripts": {
-		"start": "parcel index.html",
+		"dev": "parcel ./src/index.html -d dist/",
+		"start": "electron .",
 		"build": "parcel build index.html"
 	},
 	"author": {
