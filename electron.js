@@ -18,6 +18,7 @@ app.on('ready', () => {
 		});
 
 	mainWindow.loadURL(startUrl);
+	// mainWindow.webContents.openDevTools();
 
 	mainWindow.on('closed', function() {
 		// Dereference the window object, usually you would store windows
