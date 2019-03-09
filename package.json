@@ -11,7 +11,7 @@
 	},
 	"scripts": {
 		"dev": "rimraf dist && parcel -p 4050 ./src/index.html -d dist/ --public-url /",
-		"dev:electron": "ELECTRON_START_URL=http://localhost:4050 concurrently \"npm run dev start\" \" wait-on http://localhost:4050 && electron . --public-url / \" ",
+		"dev:electron": "ELECTRON_START_URL=http://localhost:4050 concurrently \" node index.js start\" \" wait-on http://localhost:4050 && electron . --public-url / \" ",
 		"start": "electron .",
 		"start:electron": "ELECTRON_START_URL=http://localhost:4050 electron . --public-url /",
 		"prebuild": "rimraf dist",
